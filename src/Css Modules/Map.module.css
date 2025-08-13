@@ -1,0 +1,17 @@
+div :global(.leaflet-popup-content-wrapper) {
+  background-color: rgb(44, 44, 44);
+  color: white;
+  border-radius: 8px;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+
+:global(.leaflet-popup-content-wrapper) strong {
+  color: var(--color-brand--2);
+}
+
+:global(.leaflet-popup-content-wrapper) em {
+  color: var(--color--light--1);
+}

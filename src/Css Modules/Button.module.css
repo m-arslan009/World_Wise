@@ -1,0 +1,39 @@
+.btn {
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.back {
+  background-color: transparent !important;
+  color: white !important;
+  border: 2px solid white !important;
+  padding: 8px 13px !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  transition: all 0.3s ease !important;
+}
+
+.primary {
+  background-color: var(--color-brand--2);
+  color: var(--color-dark--1);
+}
+
+.position {
+  font-weight: 700;
+  position: absolute;
+  z-index: 1000;
+  font-size: 1rem;
+  bottom: 4rem;
+  left: 40%;
+  transform: translateX(50%);
+  background-color: var(--color-brand--2);
+  color: var(--color-dark--1);
+  box-shadow: 0 0.4rem 1.2rem rgba(36, 42, 46, 0.16);
+}

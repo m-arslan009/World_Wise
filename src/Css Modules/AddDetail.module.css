@@ -1,0 +1,47 @@
+.container {
+  background-color: var(--color-dark--2);
+  margin: auto;
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.input_container {
+  margin: 10px 0;
+}
+
+.input_container label {
+  font-size: 16px;
+}
+
+.input_container input,
+.input_container textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+}
+
+.input_container textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+textarea:focus {
+  background-color: white;
+}
+
+.button_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button_container button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}

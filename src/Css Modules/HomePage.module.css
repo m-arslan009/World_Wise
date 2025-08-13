@@ -1,0 +1,44 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: url(../assets/HomeBackground.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.content_container {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Manrope", sans-serif;
+  text-align: center;
+}
+
+.content_container h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.content_container p {
+  color: var(--color--light--1);
+  margin: 1.5rem 0;
+}
+
+.content_container p,
+.content_container h1 {
+  width: 50%;
+}

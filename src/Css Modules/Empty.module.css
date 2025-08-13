@@ -1,0 +1,35 @@
+.emptyCities {
+  background-color: var(--color-dark--0);
+  color: var(--color-light--2);
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 400px;
+  margin: auto;
+}
+
+.emptyCitiesIcon {
+  font-size: 20px;
+  transform: scale(1);
+  transition: all 0.3s ease;
+  animation: alert 1s infinite;
+}
+
+@keyframes alert {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

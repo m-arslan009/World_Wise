@@ -1,0 +1,106 @@
+.mapTypeSelector {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  min-width: 100px;
+}
+
+.mapTypeSelector * {
+  font-family: "Manrope", sans-serif;
+}
+
+.mapTypeSelector h3 {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2d3748;
+  text-align: center;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.mapTypeButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 12px 8px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  width: 70px;
+  height: 70px;
+}
+
+.mapTypeButton:hover {
+  border-color: #42b883;
+  background: #f0f9f5;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(66, 184, 131, 0.2);
+}
+
+.mapTypeButton.active {
+  border-color: #42b883;
+  background: #42b883;
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(66, 184, 131, 0.3);
+}
+
+.icon {
+  font-size: 18px;
+  display: block;
+}
+
+.name {
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.mapTypeButton.active .name {
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mapTypeSelector {
+    top: 10px;
+    left: 10px;
+    padding: 12px;
+    min-width: 160px;
+  }
+
+  .buttonGroup {
+    gap: 6px;
+  }
+
+  .mapTypeButton {
+    padding: 8px 6px;
+    min-height: 50px;
+  }
+
+  .icon {
+    font-size: 16px;
+  }
+
+  .name {
+    font-size: 10px;
+  }
+}

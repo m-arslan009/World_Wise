@@ -1,0 +1,13 @@
+.citiesList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  overflow-y: auto;
+  height: calc(100vh - 250px);
+}
+
+.citiesList::-webkit-scrollbar {
+  display: none;
+}

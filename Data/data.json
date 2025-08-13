@@ -1,0 +1,223 @@
+{
+  "Cities": [
+    {
+      "id": 1,
+      "cityName": "Paris",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "Friday, October 31, 2027",
+      "notes": "Amazing city with beautiful architecture",
+      "position": {
+        "lat": 48.8566,
+        "lng": 2.3522
+      }
+    },
+    {
+      "id": 2,
+      "cityName": "Tokyo",
+      "country": "Japan",
+      "emoji": "🇯🇵",
+      "date": "Thursday, July 15, 2027",
+      "notes": "Vibrant city with incredible technology and culture",
+      "position": {
+        "lat": 35.6762,
+        "lng": 139.6503
+      }
+    },
+    {
+      "id": 3,
+      "cityName": "New York",
+      "country": "United States",
+      "emoji": "🇺🇸",
+      "date": "Friday, April 2, 2027",
+      "notes": "The city that never sleeps",
+      "position": {
+        "lat": 40.7128,
+        "lng": -74.006
+      }
+    },
+    {
+      "id": 4,
+      "cityName": "London",
+      "country": "United Kingdom",
+      "emoji": "🇬🇧",
+      "date": "Wednesday, May 12, 2027",
+      "notes": "Rich history and royal culture",
+      "position": {
+        "lat": 51.5074,
+        "lng": -0.1278
+      }
+    },
+    {
+      "id": 5,
+      "cityName": "Sydney",
+      "country": "Australia",
+      "emoji": "🇦🇺",
+      "date": "Sunday, June 20, 2027",
+      "notes": "Beautiful harbor city with iconic opera house",
+      "position": {
+        "lat": -33.8688,
+        "lng": 151.2093
+      }
+    },
+    {
+      "id": 6,
+      "cityName": "Dubai",
+      "country": "United Arab Emirates",
+      "emoji": "🇦🇪",
+      "date": "Tuesday, March 15, 2027",
+      "notes": "Futuristic city with stunning architecture and luxury",
+      "position": {
+        "lat": 25.2048,
+        "lng": 55.2708
+      }
+    },
+    {
+      "id": 7,
+      "cityName": "Rome",
+      "country": "Italy",
+      "emoji": "🇮🇹",
+      "date": "Saturday, August 8, 2027",
+      "notes": "Ancient city with incredible history and amazing food",
+      "position": {
+        "lat": 41.9028,
+        "lng": 12.4964
+      }
+    },
+    {
+      "id": 8,
+      "cityName": "Barcelona",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "Monday, September 12, 2027",
+      "notes": "Vibrant city with Gaudí architecture and beautiful beaches",
+      "position": {
+        "lat": 41.3851,
+        "lng": 2.1734
+      }
+    },
+    {
+      "id": 9,
+      "cityName": "Amsterdam",
+      "country": "Netherlands",
+      "emoji": "🇳🇱",
+      "date": "Thursday, November 3, 2027",
+      "notes": "Charming canals and rich cultural heritage",
+      "position": {
+        "lat": 52.3676,
+        "lng": 4.9041
+      }
+    },
+    {
+      "id": 10,
+      "cityName": "Singapore",
+      "country": "Singapore",
+      "emoji": "🇸🇬",
+      "date": "Wednesday, December 7, 2027",
+      "notes": "Modern city-state with amazing skyline and food scene",
+      "position": {
+        "lat": 1.3521,
+        "lng": 103.8198
+      }
+    },
+    {
+      "id": 11,
+      "cityName": "Dehli",
+      "country": "India",
+      "emoji": "🇮🇳",
+      "date": "Friday, January 21, 2028",
+      "notes": "Bollywood capital with incredible energy and culture",
+      "position": {
+        "lat": 19.076,
+        "lng": 72.8777
+      }
+    },
+    {
+      "id": 12,
+      "cityName": "Cairo",
+      "country": "Egypt",
+      "emoji": "🇪🇬",
+      "date": "Sunday, February 14, 2028",
+      "notes": "Ancient city home to the pyramids and sphinx",
+      "position": {
+        "lat": 30.0444,
+        "lng": 31.2357
+      }
+    },
+    {
+      "id": 13,
+      "cityName": "Rio de Janeiro",
+      "country": "Brazil",
+      "emoji": "🇧🇷",
+      "date": "Tuesday, March 28, 2028",
+      "notes": "Beautiful beaches, Christ the Redeemer, and carnival spirit",
+      "position": {
+        "lat": -22.9068,
+        "lng": -43.1729
+      }
+    },
+    {
+      "id": 14,
+      "cityName": "Bangkok",
+      "country": "Thailand",
+      "emoji": "🇹🇭",
+      "date": "Saturday, April 16, 2028",
+      "notes": "Amazing street food and beautiful temples",
+      "position": {
+        "lat": 13.7563,
+        "lng": 100.5018
+      }
+    },
+    {
+      "id": 15,
+      "cityName": "Cape Town",
+      "country": "South Africa",
+      "emoji": "🇿🇦",
+      "date": "Monday, May 9, 2028",
+      "notes": "Stunning landscapes with Table Mountain and wine regions",
+      "position": {
+        "lat": -33.9249,
+        "lng": 18.4241
+      }
+    },
+
+    {
+      "id": 16,
+      "cityName": "Faisalabad",
+      "country": "Pakistan",
+      "emoji": "🇵🇰",
+      "date": "Monday, May 9, 2028",
+      "notes": "Stunning landscapes with Table Mountain and wine regions",
+      "position": {
+        "lat": -33.9249,
+        "lng": 18.4241
+      }
+    },
+
+    {
+      "id": 17,
+      "cityName": "Lahore",
+      "country": "Pakistan",
+      "emoji": "🇵🇰",
+      "date": "Monday, May 9, 2028",
+      "notes": "Stunning landscapes with Table Mountain and wine regions",
+      "position": {
+        "lat": -33.9249,
+        "lng": 18.4241
+      }
+    },
+
+    {
+      "id": 18,
+      "cityName": "Ankara",
+      "country": "Turkey",
+      "emoji": "🇹🇷",
+      "date": "Monday, May 9, 2028",
+      "notes": "Stunning landscapes with Table Mountain and wine regions",
+      "position": {
+        "lat": 39.9334,
+        "lng": 32.8597
+      }
+    }
+  ]
+}

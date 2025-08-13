@@ -1,0 +1,65 @@
+.cityItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--color-dark--2);
+  border-left: 5px solid var(--color-brand--2);
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.cityItemContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+}
+
+.cityItem.selected {
+  border: 2px solid var(--color-brand--2);
+  border-left: 5px solid var(--color-brand--2);
+}
+
+.cityBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 93%;
+}
+
+.cityBox div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.cityBox img {
+  width: 30px;
+  height: 20px;
+}
+
+.deleteButton {
+  background-color: transparent;
+  color: var(--color--light--1);
+  background-color: var(--color-dark--1);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 10px;
+  margin-left: auto;
+  transition: all 500ms ease;
+}
+
+.deleteButton:hover {
+  background-color: var(--color-brand--1);
+  color: var(--color-dark--1);
+  font-weight: bold;
+}
