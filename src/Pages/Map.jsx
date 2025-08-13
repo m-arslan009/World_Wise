@@ -13,6 +13,47 @@ import MapTypeSelector from "../Components/MapTypeSelector";
 import Styles from "../Css Modules/Map.module.css";
 import Button from "../Components/Button";
 import { useGeoLocation } from "../hooks/useGeoLocation";
+import L from "leaflet";
+
+// Fix for default markers not showing in production
+import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
+import markerIcon from "leaflet/dist/images/marker-icon.png";
+import markerShadow from "leaflet/dist/images/marker-shadow.png";
+
+delete L.Icon.Default.prototype._getIconUrl;
+L.Icon.Default.mergeOptions({
+  iconUrl: markerIcon,
+  iconRetinaUrl: markerIcon2x,
+  shadowUrl: markerShadow,
+});
+
+// Custom icon for better deployment compatibility
+const customMarkerIcon = new L.Icon({
+  iconUrl: markerIcon,
+  iconRetinaUrl: markerIcon2x,
+  shadowUrl: markerShadow,
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41],
+});
+
+// Fallback icon using CDN for production environments
+const fallbackMarkerIcon = new L.Icon({
+  iconUrl:
+    "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-icon.png",
+  iconRetinaUrl:
+    "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-icon-2x.png",
+  shadowUrl:
+    "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-shadow.png",
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41],
+});
+
+// Use custom icon, fallback to CDN if needed
+const markerIconToUse = customMarkerIcon;
 
 function HandleClick({ navigate, dispatch }) {
   const map = useMap();
@@ -180,7 +221,10 @@ export default function Map() {
 
         {/* Temporary marker for location clicked on map (before adding to cities) */}
         {locationWantToVisit?.lat && locationWantToVisit?.lng && (
-          <Marker position={[locationWantToVisit.lat, locationWantToVisit.lng]}>
+          <Marker
+            position={[locationWantToVisit.lat, locationWantToVisit.lng]}
+            icon={markerIconToUse}
+          >
             <Popup>
               <strong>📍 New Location to Add</strong>
               <br />
@@ -191,7 +235,10 @@ export default function Map() {
 
         {/* User's current location marker (shown when "Use My Location" is clicked) */}
         {shouldMoveToCurrentLocation && defaultLocation && !currentCity && (
-          <Marker position={[defaultLocation.lat, defaultLocation.lng]}>
+          <Marker
+            position={[defaultLocation.lat, defaultLocation.lng]}
+            icon={markerIconToUse}
+          >
             <Popup className={Styles.map_popup}>
               <strong>📍 Your Current Location</strong>
             </Popup>
@@ -202,6 +249,7 @@ export default function Map() {
         {currentCity && (
           <Marker
             position={[currentCity.position.lat, currentCity.position.lng]}
+            icon={markerIconToUse}
           >
             <Popup>
               <strong>{currentCity.cityName}</strong>
@@ -221,6 +269,7 @@ export default function Map() {
               <Marker
                 key={`${city.id}-${visitedCitiesArr.length}`}
                 position={[city.position.lat, city.position.lng]}
+                icon={markerIconToUse}
               >
                 <Popup>
                   <strong>
